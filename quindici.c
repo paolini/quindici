@@ -17,7 +17,7 @@
 
 // adattato da Maurizio Paolini <paolini@dmf.unicatt.it>
 
-#define VERSION "0.1"
+//#define VERSION "0.1"
 
 /*
  * esempi di uso
@@ -55,6 +55,7 @@
 #include <string.h>
 #include <assert.h>
 #include <time.h>
+#include "config.h"
 
 #define MAXTASSELLI 62
 static int numrighe = 4;
@@ -338,7 +339,7 @@ int parse(int argc, char *argv[]) {
       } else if (strcmp(argv[i],"-q") == 0) {
         quiet = 1;
       } else if (strcmp(argv[i],"--version") == 0) {
-        printf ("VERSIONE: %s\n", VERSION);
+        printf ("VERSIONE: %s\n", PACKAGE_VERSION);
         return 0;
       } else if (strcmp(argv[i],"--help") == 0) {
         usage (argc, argv);

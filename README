@@ -1,0 +1,19 @@
+procedura di installazione completa
+Per creare il "configure", il Makefile.in, ecc:
+
+$ aclocal
+$ autoheader
+$ automake --add-missing
+$ autoconf
+
+[non sono sicuro dell'ordine, bisogna provare finche'
+ non smette di dare errori, a parte un errore non importante
+su aclocal...]
+poi la sequenza standard:
+
+$ ./configure
+$ make
+# make install
+
+Magari non ho fatto l'svn add di tutti i files che servono,
+se hai problemi fammi un fischio.
